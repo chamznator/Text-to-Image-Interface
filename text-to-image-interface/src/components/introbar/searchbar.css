@@ -1,0 +1,66 @@
+.image-prompt-form-wrapper {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -50px;
+    z-index: 599;
+}
+
+.image-prompt-form-header, .image-prompt-form-header>div {
+    align-items: center;
+    display: flex;
+}
+.image-prompt-form-header {
+    justify-content: space-between;
+    margin-bottom: 15px;
+    min-height: 25px;
+}
+.image-prompt-form-header, .image-prompt-form-header>div {
+    align-items: center;
+    display: flex;
+}
+
+.body-small {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+.image-prompt-form-header .surprise-button {
+    margin-left: 7px;
+}
+.btn-secondary.btn-filled, .btn-secondary.btn-filled:visited {
+    color: var(--b100);
+}
+.btn-secondary.btn-filled {
+    background-color: var(--b20);
+}
+.btn-filled, .btn-filled:visited {
+    color: var(--b0);
+}
+.btn-small {
+    padding: 7px 10px 6px;
+}
+
+.btn-small, .btn-small-caps {
+    font-size: 12px;
+    line-height: 13px;
+}
+.btn {
+    border: none;
+    border-radius: 6px;
+    border-radius: var(--btn-radius);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1em;
+    margin: 0;
+    position: relative;
+    text-decoration: none;
+    transition: opacity .3s,box-shadow .3s,background-color .3s,color .3s;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

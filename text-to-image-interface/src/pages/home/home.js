@@ -1,3 +1,6 @@
+import Categorybar from "../../components/categorybar/Categorybar";
+import Searchbar from "../../components/introbar/Searchbar";
+import Topbar from "../../components/topbar/Topbar";
 import "./home.css"
 
 export default function Home() {
@@ -5,7 +8,9 @@ export default function Home() {
     <>
       
       <div className="homeContainer">
-        SEXY
+        <Topbar/>
+        <Searchbar/>
+        <Categorybar/>
       </div>
     </>
   );

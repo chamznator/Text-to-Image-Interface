@@ -1,4 +1,17 @@
-*{
+body, html {
+    -webkit-font-feature-settings: â€œligaâ€,â€œkernâ€;
+    font-feature-settings: â€œligaâ€,â€œkernâ€;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #777;
+    color: var(--text-default);
+    font-family: ColfaxAI,Helvetica,sans-serif;
+    font-family: var(--sans-serif);
+    font-size: 15px;
+    height: 100%;
+    line-height: 1.5em;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    padding: 0;
 }
