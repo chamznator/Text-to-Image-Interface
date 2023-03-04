@@ -1,3 +1,10 @@
 .MuiTab-root{
    border: 2px;
 }
+
+
+
+.postWrapper{
+    padding: 20px;
+    flex: 5.5;
+}

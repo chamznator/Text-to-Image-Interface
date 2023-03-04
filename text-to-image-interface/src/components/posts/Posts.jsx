@@ -53,7 +53,8 @@ export default function Posts() {
   };
 
   return (
-    <Box sx={{ width: '100%' }}>
+   <div className="postWrapper">
+   <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} variant="scrollable"
         scrollButtons="auto"aria-label="basic tabs example">
@@ -84,5 +85,6 @@ export default function Posts() {
         Item Three
       </TabPanel>
     </Box>
+    </div>
   );
 }
