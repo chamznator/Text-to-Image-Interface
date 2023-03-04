@@ -1,32 +1,88 @@
+import * as React from 'react';
+import PropTypes from 'prop-types';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import Post from "../post/Post";
+
+
+import { Postss } from "../../dummyData";
+
 import "./posts.css";
 
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
 
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
 
-
-function JustifiedExample() {
   return (
-    <Tabs
-      defaultActiveKey="profile"
-      id="justify-tab-example"
-      className="mb-3"
-      justify
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
     >
-      <Tab eventKey="home" title="Home">
-        1
-      </Tab>
-      <Tab eventKey="profile" title="Profile">
-        2
-      </Tab>
-      <Tab eventKey="longer-tab" title="Loooonger Tab">
-        3
-      </Tab>
-      <Tab eventKey="contact" title="Contact" disabled>
-        4
-      </Tab>
-    </Tabs>
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
   );
 }
 
-export default JustifiedExample;
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
+  };
+}
+
+export default function Posts() {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  return (
+    <Box sx={{ width: '100%' }}>
+      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+        <Tabs value={value} onChange={handleChange} variant="scrollable"
+        scrollButtons="auto"aria-label="basic tabs example">
+          <Tab label="Item One" {...a11yProps(0)} />
+          <Tab label="Item Two" {...a11yProps(1)} />
+          <Tab label="Item Three" {...a11yProps(2)} />
+          <Tab label="Item Three" {...a11yProps(3)} />
+          <Tab label="Item Three" {...a11yProps(4)} />
+          <Tab label="Item Three" {...a11yProps(5)} />
+          <Tab label="Item Three" {...a11yProps(6)} />
+        </Tabs>
+      </Box>
+      <TabPanel value={value} index={0}>
+
+      <div className="feed">
+      <div className="feedWrapper">
+       
+        {Postss.map((p) => (
+          <Post key={p.id} post={p} />
+        ))}
+      </div>
+    </div>
+      </TabPanel>
+      <TabPanel value={value} index={1}>
+        Item Two
+      </TabPanel>
+      <TabPanel value={value} index={2}>
+        Item Three
+      </TabPanel>
+    </Box>
+  );
+}
