@@ -4,9 +4,9 @@
     /*height: var(--app-header-height);*/
     position: -webkit-sticky;
     position: sticky;
-    top: 0;
+    
     width: 100%;
-    z-index: 600;}
+    }
 
     .topbarContent {
         background-color: #fafafc;
@@ -15,11 +15,12 @@
         display: flex;
         justify-content: space-between;
         left: 0;
-        padding: 0 var(--content-h-padding);
         position: absolute;
         right: 0;
-        top: 0; 
-        z-index: 1;
+        top: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+        
     }
 
     
