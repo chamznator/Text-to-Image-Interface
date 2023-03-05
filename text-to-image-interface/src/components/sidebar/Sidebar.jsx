@@ -12,7 +12,8 @@ import {
   TagIcon
 } from "@mui/icons-material";
 import { Users } from "../../dummyData";
-
+import CottageIcon from '@mui/icons-material/Cottage';
+import PostAddIcon from '@mui/icons-material/PostAdd';
 
 export default function Sidebar() {
   return (
@@ -20,8 +21,8 @@ export default function Sidebar() {
       <div className="sidebarWrapper">
         <ul className="sidebarList">
           <li className="sidebarListItem">
-            <RssFeed className="sidebarIcon" />
-            <span className="sidebarListItemText">Feed</span>
+            <CottageIcon className="sidebarIcon" />
+            <span className="sidebarListItemText">For You</span>
           </li>
          
           <li className="sidebarListItem">
@@ -29,8 +30,8 @@ export default function Sidebar() {
             <span className="sidebarListItemText">Groups</span>
           </li>
           <li className="sidebarListItem">
-            <Bookmark className="sidebarIcon" />
-            <span className="sidebarListItemText">Bookmarks</span>
+            <PostAddIcon fontSize="large" className="sidebarIcon" />
+            <span className="sidebarListItemText">Share</span>
           </li>
        
         </ul>
@@ -57,14 +58,53 @@ export default function Sidebar() {
                 <img className="sugImg"  src="assets/person/2.jpeg" alt="" />
                 <a href="" className="sugName">
                     <div className="nameWrapper">
-                        <h4 className="idTag">theweekend</h4>
-                        <p className="nameTag">The weekend</p>
+                        <h4 className="idTag">RyRen</h4>
+                        <p className="nameTag">Ryan Renolds</p>
                     </div>
 
                 </a>
 
 
                 </div>
+                <div className="tiktok-1mo2fkg-DivUserLinkContainer e797se20">
+
+                <img className="sugImg"  src="assets/person/5.jpeg" alt="" />
+                <a href="" className="sugName">
+                    <div className="nameWrapper">
+                        <h4 className="idTag">Van4Go</h4>
+                        <p className="nameTag">John Smith</p>
+                    </div>
+            
+                </a>
+
+                
+            </div>
+            <div className="tiktok-1mo2fkg-DivUserLinkContainer e797se20">
+
+                <img className="sugImg"  src="assets/person/8.jpeg" alt="" />
+                <a href="" className="sugName">
+                    <div className="nameWrapper">
+                        <h4 className="idTag">OliviaArts</h4>
+                        <p className="nameTag">Olivia James</p>
+                    </div>
+            
+                </a>
+
+                
+            </div>
+            <div className="tiktok-1mo2fkg-DivUserLinkContainer e797se20">
+
+                      <img className="sugImg"  src="assets/person/9.jpeg" alt="" />
+                      <a href="" className="sugName">
+                          <div className="nameWrapper">
+                              <h4 className="idTag">AlistaGames</h4>
+                              <p className="nameTag">Alex Duncan</p>
+                          </div>
+
+                      </a>
+
+
+</div>
         
         
         </div>
@@ -85,15 +125,27 @@ export default function Sidebar() {
                     </a>                          
                 </div>   
                 <div class="tiktok-1avbtpl-DivDiscoverItemContainer eikhr9j7">
-                    <a href=""><span class="tiktok-e841qv-PText eikhr9j12"># bkdfklad;fjkaldfadjsfljasf;lkdjafjaskl;</span>
+                    <a href=""><span class="tiktok-e841qv-PText eikhr9j12"># watermelon sugar high in the ksy;</span>
                     </a>                          
                 </div>   
                 <div class="tiktok-1avbtpl-DivDiscoverItemContainer eikhr9j7">
-                    <a href=""><span class="tiktok-e841qv-PText eikhr9j12"># whenwomenwin</span>
+                    <a href=""><span class="tiktok-e841qv-PText eikhr9j12"># US election</span>
                     </a>                          
                 </div>
                 <div class="tiktok-1avbtpl-DivDiscoverItemContainer eikhr9j7">
-                    <a href=""><span class="tiktok-e841qv-PText eikhr9j12"># whenwomenwin</span>
+                    <a href=""><span class="tiktok-e841qv-PText eikhr9j12"># bla bla bla </span>
+                    </a>                          
+                </div>
+                <div class="tiktok-1avbtpl-DivDiscoverItemContainer eikhr9j7">
+                    <a href=""><span class="tiktok-e841qv-PText eikhr9j12"># support ukrain AI arts program </span>
+                    </a>                          
+                </div>
+                <div class="tiktok-1avbtpl-DivDiscoverItemContainer eikhr9j7">
+                    <a href=""><span class="tiktok-e841qv-PText eikhr9j12"># bla bla bla </span>
+                    </a>                          
+                </div>
+                <div class="tiktok-1avbtpl-DivDiscoverItemContainer eikhr9j7">
+                    <a href=""><span class="tiktok-e841qv-PText eikhr9j12"># bla bla bla </span>
                     </a>                          
                 </div>
             </div>

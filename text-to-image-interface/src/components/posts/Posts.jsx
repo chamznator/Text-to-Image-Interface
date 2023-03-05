@@ -8,6 +8,7 @@ import Post from "../post/Post";
 
 
 import { Postss } from "../../dummyData";
+import { Posts2, Posts3 } from "../../dummyData";
 
 import "./posts.css";
 
@@ -58,13 +59,13 @@ export default function Posts() {
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} variant="scrollable"
         scrollButtons="auto"aria-label="basic tabs example">
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
-          <Tab label="Item Three" {...a11yProps(3)} />
-          <Tab label="Item Three" {...a11yProps(4)} />
-          <Tab label="Item Three" {...a11yProps(5)} />
-          <Tab label="Item Three" {...a11yProps(6)} />
+          <Tab label="3D render" {...a11yProps(0)} />
+          <Tab label="Anime" {...a11yProps(1)} />
+          <Tab label="Game Art" {...a11yProps(2)} />
+          <Tab label="Film" {...a11yProps(3)} />
+          <Tab label="Photography" {...a11yProps(4)} />
+          <Tab label="Hyperreal" {...a11yProps(5)} />
+          <Tab label="Oil Painting Style" {...a11yProps(6)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -79,10 +80,24 @@ export default function Posts() {
     </div>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+      <div className="feed">
+      <div className="feedWrapper">
+       
+        {Posts2.map((p) => (
+          <Post key={p.id} post={p} />
+        ))}
+      </div>
+    </div>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+      <div className="feed">
+      <div className="feedWrapper">
+       
+        {Posts3.map((p) => (
+          <Post key={p.id} post={p} />
+        ))}
+      </div>
+    </div>
       </TabPanel>
     </Box>
     </div>

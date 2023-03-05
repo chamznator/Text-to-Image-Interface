@@ -5,6 +5,7 @@
     position: sticky;
     top: 50px;
     display: flex;
+    margin-left: 20px;
   }
   
   ::-webkit-scrollbar {
@@ -31,10 +32,14 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    font-size: 25px;
+    color: #342c2c;
+   
   }
   
   .sidebarIcon {
     margin-right: 15px;
+   
   }
   
   .sidebarButton {
@@ -74,7 +79,7 @@
     box-sizing: border-box;
     width: fit-content;
     max-width: 100%;
-    height: 24px;
+   
     margin-bottom: 12px;
     padding: 3px 10px;
     border: 1px solid rgba(22, 24, 35, 0.2);
@@ -91,7 +96,9 @@
 }
 .tiktok-e841qv-PText{
 
-    font-weight: 600;
+  font-weight: 600;
+  font-size: 20px;
+  color: #302525;
 }
 .tiktok-1avbtpl-DivDiscoverItemContainer :hover{
     background-color: aqua;
@@ -109,12 +116,12 @@
   display: flex;
 }
 .nameTag {
-  font-size: 9px;
+  font-size: 13px;
   margin: 0;
 }
 .idTag {
   margin: 0;
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -122,4 +129,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.MuiIcon-root{
+    width: 50px;
+    height: 50px;
 }

@@ -28,13 +28,13 @@
     .app-header-left, .app-header-right {
         align-items: center;
         display: flex;
-        gap: 20px;
+        gap: 40px;
     }
     .app-header-logo {
         display: flex;
     }
     .link-style, a {
-        color: #777;
+        color: #000000;
         /* color: var(--b60); */
         cursor: pointer;
         text-decoration: none;
@@ -46,7 +46,9 @@
 
     .app-header-item-desktop.selected, .app-header-item-desktop.selected:hover {
         color: #000;
-    }
+        font-size: 28px;
+}
+    
     
     .app-header-item-desktop {
         padding-top: 1px;

@@ -10,7 +10,7 @@ return(
 <>
 <div className="introSection">
         <span className="titleW">
-            Imagen
+            IMAGEN
         </span>
         <span className="introMsg">
             Internet's largest source for AI visual collaboration

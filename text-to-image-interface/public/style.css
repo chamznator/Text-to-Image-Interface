@@ -176,7 +176,7 @@
 }
 .btn-disabled {
   cursor: default;
-  pointer-events: none;
+  
 }
 .btn.btn-disabled-style {
   background-color: var(--b20);
@@ -644,7 +644,7 @@
   margin: 0;
   resize: none;
   vertical-align: top;
-  width: 600px;
+  width: 700px;
 }
 .text-input::-webkit-input-placeholder {
   color: var(--b40);
@@ -4568,6 +4568,7 @@ html {
   font-size: 15px;
   height: 100%;
   margin: 0;
+  margin-left: 20px;
   padding: 0;
 }
 @media (max-width: 767px) {

@@ -6,5 +6,7 @@
 
 .postWrapper{
     padding: 20px;
-    flex: 5.5;
+    flex: 5.5 1;
+    background-color: white;
+    color: black;
 }
